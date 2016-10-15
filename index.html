@@ -12,10 +12,10 @@
 	<script type="text/babel">
 		var HelloWorld = React.createClass({
 			render: function(){
-				return <div>
-					<h1>Hello World!</h1>
-					<p>This is some text</p>
-				</div>
+				return (React.createElement('div',null,
+					React.createElement('h1', null, "Hello World!"),
+					React.createElement('p', null, "This is some text"),
+				))
 			}
 		})
 		ReactDOM.render(<HelloWorld/>, document.body)
